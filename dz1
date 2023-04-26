@@ -1,0 +1,15 @@
+#Дан список повторяющихся элементов. Вернуть список с дублирующимися элементами.
+#В результирующем списке не должно быть дубликатов.
+
+my_list = [2, 1, 2, 4, 1, 5, 6, 7, 8, 1]
+print(my_list)
+
+for i in my_list:
+    if my_list.count(i) > 1:
+        for j in range(my_list.count(i)):
+            my_list.remove(i)
+
+
+my_list2 = set(my_list)
+
+print(my_list2)
